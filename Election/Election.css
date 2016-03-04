@@ -1,0 +1,85 @@
+body{
+text-align: center;
+background-color: #01edb7;
+
+}
+
+h1{
+	color: #fc4600;
+	font-size: 60px;
+	margin: 40px 0px 0px;
+	text-shadow: 1px 1px 0px #ffff00, 4px 1px 2px  black;
+	
+}
+
+h2{
+	color: #fc4600;
+	font-size: 40px;
+	text-shadow: 1px 0px 0px #ffff00, 3px 2px 0px  black;
+
+}
+
+#countdown-wrapper{
+	color: #fff;
+	font-size: 30px;
+	margin-top: 2%;
+	position: relative;
+
+}
+
+#countdown-wrapper > div{
+	padding:10px;
+	border-radius: 3px;
+	background-color: #00806b;
+	display: inline-block;
+	
+}
+
+.time-wrapper > div{
+	padding: 15px;
+	border-radius: 15px;
+	background-color: #00806b;
+	display: inline-block;
+
+
+}
+
+.time-text{
+	padding-top: 5px;
+	font-size: 20px;
+	
+}
+.trump-gif{
+	position: absolute;
+	left: 1%;
+	top: 15%;
+	width: 20%;
+
+}
+
+.hillary-gif{
+	position: absolute;
+	right: 1%;
+	top: 15%;
+	width: 20%;
+	padding: 1%;
+}
+.trump{
+	position: absolute;
+	left: 1%;
+	top: 40%;
+	padding: 1%;
+
+}
+
+.hillary{
+	position: absolute;
+	right: 3%;
+	top: 40%;
+	padding: 1%;
+}
+img{
+	width: 100%;
+}
+
+
