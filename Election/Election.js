@@ -1,5 +1,5 @@
 function timeTillDoomsday(){
-	var endTime = new Date(2016, 10, 8, 19, 0, 0, 0);
+	var endTime = new Date(2016, 09, 7, 21, 0, 0, 0);
 	var now = new Date();
 	var endTimeStamp = Date.parse(endTime); 
 	var nowTimeStamp = Date.parse(now);
@@ -45,10 +45,20 @@ function initTimer(){
 };
 
 function updateTimer(){
+	if(updateTimer == 2016, 2, 4, 16, 33, 0, 0){
+	document.getElementById('trump-gif').style.visibility = "hidden";
+	document.getElementById('hillary-gif').style.visibility = "hidden";
+	document.getElementById('explosion-gif').style.visibility = "visible";
+}
+;
 
 };
+
 
 initTimer();
 
 setInterval(initTimer, 500
-);
+)
+
+
+
