@@ -1,6 +1,7 @@
 body{
 text-align: center;
 background-color: #01edb7;
+margin: 0 auto;
 
 }
 
@@ -9,7 +10,7 @@ background-color: #01edb7;
 	font-size: 60px;
 	margin: 40px 0px 0px;
 	text-shadow: 1px 1px 0px #ffff00, 4px 1px 2px  black;
-	
+	padding: 1%;
 }
 
 h2{
@@ -19,12 +20,19 @@ h2{
 
 }
 
+img{
+	width: 100%;
+	margin: 0 auto;
+}
+
 #countdown-wrapper{
 	color: #fff;
 	font-size: 30px;
 	margin-top: 2%;
 	position: absolute;
 	text-align: center;
+	margin: 0 auto;
+	left: 4%;
 
 
 }
@@ -32,7 +40,6 @@ h2{
 #countdown-wrapper > div{
 	padding:10px;
 	border-radius: 3px;
-	/*background-color: #00806b;*/
 	display: inline-block;
 	
 }
@@ -42,9 +49,6 @@ h2{
 	border-radius: 15px;
 	background-color: #00806b;
 	display: inline-block;
-
-
-
 }
 
 .time-text{
@@ -106,19 +110,11 @@ h2{
 	margin: 0 auto;
 }
 
-/*html{
-	background-color: #ccc;
-}*/
-
 #the-fight{
 	margin: 0 auto;
 	max-width: 960px;
 	position: relative;
-	
-
 }
-
-
 
 button{
 	background-color: red;
@@ -127,22 +123,13 @@ button{
 	color: white;
 	border-radius: 5px;
 }
-/*#dragon-wrapper img{
-	text-align: center;
-	width: 100%;
-	max-width: 600px;
-	position: relative;
-	left: 11%;
-	margin-top: 2%;
-	margin-bottom: -10%;*/
 
-}
 .dragon{
 	text-align: center;
 	display: inline-block;
-
-
-	
+	/*border: 2.8px solid black;*/
+	position: relative;
+	left: 2%;
 }
 
 .dragon-appeared{
@@ -160,8 +147,6 @@ button{
 	display: inline-block;
 	right: -20%;
 	padding-top: 15%;
-
-
 }
 
 #coward{
@@ -201,9 +186,8 @@ button{
 	float: left;
 	width: 25%;
 	background-color: #00806b;
-
-
 }
+
 span{
 	color: red;
 }
@@ -235,8 +219,7 @@ span{
 	margin: 0 auto;
 	position: relative;
 	top: 0%;
-	/*background-color: #00806b;*/
-
+	
 }
 
 #dragon-wrapper img{
@@ -251,8 +234,22 @@ h3{
 	font-family: 'Indie Flower', cursive;
 	margin: 1%;
 	text-shadow: 3px 1px 2px black, 5px 5px 1px red, 4px 4px 1px blue;
+	padding: 8%;
+
 }
 
 #background{
 	background-color: #00806b;
 }
+
+.explosion{
+	width: 100%;
+	display: inline-block;
+	/*background-color: black;*/
+	margin-top: -10%;
+}
+
+#dragon{
+	border: 2px solid black;
+}
+

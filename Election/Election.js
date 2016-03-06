@@ -1,11 +1,13 @@
 function timeTillDoomsday(){
-	var endTime = new Date(2016, 09, 7, 19, 0, 0, 0);
+	var endTime = new Date(2016, 02, 6, 18, 21, 0, 0);
 	var now = new Date();
 	var endTimeStamp = Date.parse(endTime); 
 	var nowTimeStamp = Date.parse(now);
 	var timeDifference = endTimeStamp - nowTimeStamp;
 
-	if(timeDifference < 0){var finished = true}else{var finished = false;}
+	if(timeDifference <= 0){
+		var finished = true}
+		else{var finished = false;}
 
 	var timeStampInSeconds = timeDifference/1000;
 	var seconds = Math.floor(timeStampInSeconds  % 60);
@@ -44,22 +46,34 @@ function initTimer(){
 	minutes.innerHTML = timeObjectReturned.minutes;
 	seconds.innerHTML = timeObjectReturned.seconds;
 
-if(timeObjectReturned.finished == true){
+	var checktime = timeObjectReturned;
+    if (checktime <= 0) {
+    	window.clearInterval();
+    	document.getElementById('trump-gif').style.visibility = "hidden";
+	document.getElementById('hillary-gif').style.visibility = "hidden";
+	document.getElementById('explosion').style.visibility = "visible";
+
+
+// if(timeObjectReturned.finished == true){
 	//do stuff. we aer done.
 	//clearInterval
+	// document.getElementById('trump-gif').style.visibility = "hidden";
+	// document.getElementById('hillary-gif').style.visibility = "hidden";
+	// document.getElementById('explosion').style.visibility = "visible";
+
 }
 
 };
 
 function updateTimer(){
-	if(updateTimer == 2016, 2, 4, 16, 33, 0, 0){
-	document.getElementById('trump-gif').style.visibility = "hidden";
-	document.getElementById('hillary-gif').style.visibility = "hidden";
-	document.getElementById('explosion-gif').style.visibility = "visible";
+	// if(timeDifference <= 0){
+	// document.getElementById('trump-gif').style.visibility = "hidden";
+	// document.getElementById('hillary-gif').style.visibility = "hidden";
+	// document.getElementById('explosion').style.visibility = "visible";
 }
 ;
 
-};
+;
 
 
 initTimer();
@@ -120,14 +134,14 @@ function throwDie(){
 
 // <input type="button" onclick="throwDie();">
 
-function runForYourLife(){
-	document.getElementById('whimp1').style.visibility = "visible";
-	document.getElementById('coward').style.visibility = "visible";
-	document.getElementById('dice').style.visibility = "hidden";
-	document.getElementById('dragon').style.visibility = "hidden";
-	document.getElementById('wild-dragon').style.visibility = "hidden";
-	document.getElementById('your-health').style.visibility = "hidden";
-	document.getElementById('health-bar').style.visibility = "hidden";}
+// function runForYourLife(){
+// 	document.getElementById('whimp1').style.visibility = "visible";
+// 	document.getElementById('coward').style.visibility = "visible";
+// 	document.getElementById('dice').style.visibility = "hidden";
+// 	document.getElementById('dragon').style.visibility = "hidden";
+// 	document.getElementById('wild-dragon').style.visibility = "hidden";
+// 	document.getElementById('your-health').style.visibility = "hidden";
+// 	document.getElementById('health-bar').style.visibility = "hidden";}
 
 function showDragonGame(){
 	document.getElementById('dragon-wrapper').style.visibility = "visible";
