@@ -5,16 +5,17 @@
 
 <link rel="stylesheet" type="text/css" href="reset.css">
 <link rel="stylesheet" type="text/css" href="Election.css">
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
 	<h1> Countdown Until Doomsday</h1>
-	<h2 class="trump"> Trump</h2>
-	<h2 class="hillary">Hillary</h2>
 
 <div id="countdown-wrapper">
+
+	<div id="time-wrapper">
 
 	<div>
 		<div id="weeks"></div>
@@ -40,23 +41,80 @@
 		<div id="seconds"></div>
 		<div class="time-text">Seconds</div>
 	</div>
+
 	</div>
+	
+		<div class="trump-gif" style="visibility: visible;">
+			<h2 class="trump">Trump</h2>
+			<img src= "giphy.gif"></div>
 
-	<div class="trump-gif" style="visibility: visible;">
-		<!-- <a href=></a> -->
-		<img src= "giphy.gif"></div>
+		<div class="hillary-gif" style="visibility: visible;">
+			<h2 class="hillary">Hillary</h2>
+			<img src="giphy(1).gif"></div>
 
-	<div class="hillary-gif" style="visibility: visible;">
-		<img src="giphy(1).gif"></div>
+		
+		
 
 	<div class="explosion-gif" style="visibility: hidden;">
 		<img src="giphy(2).gif"></div>
+	
+	<h3>While you wait play the Dragon Game I created</h3>
+	<div class="play-dragon-game">
+		<button onclick="showDragonGame();">Press to Play the Dragon!</button>
+	<div class="stop-dragon-game">
+		<button onclick="stopDragonGame();">Press to Stop the Dragon!</button>
+
+
+
+<div id="dragon-wrapper" style="visibility: hidden;">
+
+
+	<div id="the-fight">
+
+	<h1 id="wild-dragon">A Wild Dragon Appeared!!</h1>
+	<!-- <h1 id="coward" style="visibility: hidden;">You're a coward!!</h1> -->
+
+	<progress id="yourhealth" value = "100" max= "100"></progress>
+	<p class="health-bar">This is your health bar. Everytime you get <span>snake eyes</span>you will lose 30 points! If you roll a total of 6 the <span>Dragon</span> will lose 80 points!</p>
+
+	<progress id="dragonhealth" value = "100" max= "100"></progress>
+	<p class="dragon-health">This is the <span>Dragons</span> health. If the <span>Dragon</span> rolls a 2 or 4 he will loose 10 points! If the <span>Dragon</span> rolls a total of 12 you will lose 50 points!</p>
+
+	
+		<div class="dragon">
+			<img id="dragon" src="dice.roller/dice-img/dragon.png">
+
+			<!-- <div class="whimp">
+				<img id="whimp1" src="dice.roller/dice-img/fleeing.png" > -->
+
+		
+				<div id="dice">
+					<img src="dice.roller/dice-img/d1.gif" name="myDie1">
+					<img src="dice.roller/dice-img/d1.gif" name="myDie2">
+				
+				<div class="button">
+					<!-- <button onclick="runForYourLife();">Run For Your Life!</button> -->
+					<button onclick="throwDie();">Roll The Dice to battle the Dragon!</button>
+
+					
+					<!-- <script type="text/javascript" src="Dragon.Game.js"></script>  -->
+
+				</div>
+
+				</div>
+			</div>
+		</div>
+</div>
+	</div>
+	
+</div>
+	
 
 
 
 
 
-
+	</div>
 
 
 <script type="text/javascript" src="Election.js"></script>
