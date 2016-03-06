@@ -1,5 +1,5 @@
 function timeTillDoomsday(){
-	var endTime = new Date(2016, 02, 6, 18, 21, 0, 0);
+	var endTime = new Date(2016, 09, 8, 19, 0, 0, 0);
 	var now = new Date();
 	var endTimeStamp = Date.parse(endTime); 
 	var nowTimeStamp = Date.parse(now);
