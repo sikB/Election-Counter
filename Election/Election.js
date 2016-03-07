@@ -1,5 +1,5 @@
 function timeTillDoomsday(){
-	var endTime = new Date(2016, 09, 8, 19, 0, 0, 0);
+	var endTime = new Date(2016, 10, 8, 19, 0, 0, 0);
 	var now = new Date();
 	var endTimeStamp = Date.parse(endTime); 
 	var nowTimeStamp = Date.parse(now);
@@ -8,6 +8,13 @@ function timeTillDoomsday(){
 	if(timeDifference <= 0){
 		var finished = true}
 		else{var finished = false;}
+
+	// if (timeObject.finished == true) {
+ //        document.getElementById('trump-gif').style.visibility = "hidden";
+ //        document.getElementById('hillary-gif').style.visibility = "hidden";
+ //        document.getElementById('explosion').style.visibility = "visible";
+ //        window.clearInterval(myInt);    
+ //    }
 
 	var timeStampInSeconds = timeDifference/1000;
 	var seconds = Math.floor(timeStampInSeconds  % 60);
@@ -38,6 +45,8 @@ function initTimer(){
 	var minutes = document.getElementById('minutes');
 	var seconds = document.getElementById('seconds');
 
+
+
 	//This next line calls the timeTillDoomsday function
 	var timeObjectReturned = timeTillDoomsday();
 	weeks.innerHTML = timeObjectReturned.weeks;
@@ -46,12 +55,33 @@ function initTimer(){
 	minutes.innerHTML = timeObjectReturned.minutes;
 	seconds.innerHTML = timeObjectReturned.seconds;
 
-	var checktime = timeObjectReturned;
-    if (checktime <= 0) {
-    	window.clearInterval();
-    	document.getElementById('trump-gif').style.visibility = "hidden";
+	if(timeObjectReturned.finished == true){
+	window.clearInterval(myInt);
+    document.getElementById('trump-gif').style.visibility = "hidden";
 	document.getElementById('hillary-gif').style.visibility = "hidden";
 	document.getElementById('explosion').style.visibility = "visible";
+	document.getElementById('h3').style.visibility = "hidden";
+	document.getElementById('play-dragon-game').style.visibility = "hidden";
+	document.getElementById('stop-dragon-game').style.visibility = "hidden";
+	document.getElementById('explosion').style.visibility = "visible";
+	document.getElementById('time-wrapper').style.visibility = "hidden";
+	document.getElementById('h1').style.visibility = "hidden";
+	
+
+
+	
+	
+	}
+
+	// if (timeObject.finished == true) {
+ //        document.getElementById('trump-gif').style.visibility = "hidden";
+ //        document.getElementById('hillary-gif').style.visibility = "hidden";
+ //        document.getElementById('explosion').style.visibility = "visible";
+ //        window.clearInterval(myInt);    
+ //    }
+
+
+    	
 
 
 // if(timeObjectReturned.finished == true){
@@ -63,25 +93,32 @@ function initTimer(){
 
 }
 
-};
+
 
 function updateTimer(){
-	// if(timeDifference <= 0){
-	// document.getElementById('trump-gif').style.visibility = "hidden";
-	// document.getElementById('hillary-gif').style.visibility = "hidden";
-	// document.getElementById('explosion').style.visibility = "visible";
+// 	if(timeTillDoomsday <= 0){
+// 		clearInterval(myInt);
+// 	document.getElementById('trump-gif').style.visibility = "hidden";
+// 	document.getElementById('hillary-gif').style.visibility = "hidden";
+// 	document.getElementById('explosion').style.visibility = "visible";
 }
 ;
 
 ;
 
 
-initTimer();
+// initTimer();
 
 //This next line runs initTimer function every .5 seconds
-setInterval(initTimer, 500
-)
 
+var myInt = setInterval(initTimer, 500);
+// clearInterval(myInt);
+// if (timeDifference <= 0) {
+//        document.getElementById('trump-gif').style.visibility = "hidden";
+//         document.getElementById('hillary-gif').style.visibility = "hidden";
+//         document.getElementById('explosion').style.visibility = "visible";
+//         window.clearInterval(myInt);    
+//     }
 
 
 
