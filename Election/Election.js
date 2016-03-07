@@ -9,12 +9,6 @@ function timeTillDoomsday(){
 		var finished = true}
 		else{var finished = false;}
 
-	// if (timeObject.finished == true) {
- //        document.getElementById('trump-gif').style.visibility = "hidden";
- //        document.getElementById('hillary-gif').style.visibility = "hidden";
- //        document.getElementById('explosion').style.visibility = "visible";
- //        window.clearInterval(myInt);    
- //    }
 
 	var timeStampInSeconds = timeDifference/1000;
 	var seconds = Math.floor(timeStampInSeconds  % 60);
@@ -67,58 +61,18 @@ function initTimer(){
 	document.getElementById('time-wrapper').style.visibility = "hidden";
 	document.getElementById('h1').style.visibility = "hidden";
 	
-
-
-	
-	
-	}
-
-	// if (timeObject.finished == true) {
- //        document.getElementById('trump-gif').style.visibility = "hidden";
- //        document.getElementById('hillary-gif').style.visibility = "hidden";
- //        document.getElementById('explosion').style.visibility = "visible";
- //        window.clearInterval(myInt);    
- //    }
-
-
-    	
-
-
-// if(timeObjectReturned.finished == true){
-	//do stuff. we aer done.
-	//clearInterval
-	// document.getElementById('trump-gif').style.visibility = "hidden";
-	// document.getElementById('hillary-gif').style.visibility = "hidden";
-	// document.getElementById('explosion').style.visibility = "visible";
-
 }
 
 
 
 function updateTimer(){
-// 	if(timeTillDoomsday <= 0){
-// 		clearInterval(myInt);
-// 	document.getElementById('trump-gif').style.visibility = "hidden";
-// 	document.getElementById('hillary-gif').style.visibility = "hidden";
-// 	document.getElementById('explosion').style.visibility = "visible";
+
 }
 ;
 
-;
-
-
-// initTimer();
-
-//This next line runs initTimer function every .5 seconds
+;}
 
 var myInt = setInterval(initTimer, 500);
-// clearInterval(myInt);
-// if (timeDifference <= 0) {
-//        document.getElementById('trump-gif').style.visibility = "hidden";
-//         document.getElementById('hillary-gif').style.visibility = "hidden";
-//         document.getElementById('explosion').style.visibility = "visible";
-//         window.clearInterval(myInt);    
-//     }
 
 
 
@@ -167,19 +121,6 @@ function throwDie(){
 }
 
 
-
-
-// <input type="button" onclick="throwDie();">
-
-// function runForYourLife(){
-// 	document.getElementById('whimp1').style.visibility = "visible";
-// 	document.getElementById('coward').style.visibility = "visible";
-// 	document.getElementById('dice').style.visibility = "hidden";
-// 	document.getElementById('dragon').style.visibility = "hidden";
-// 	document.getElementById('wild-dragon').style.visibility = "hidden";
-// 	document.getElementById('your-health').style.visibility = "hidden";
-// 	document.getElementById('health-bar').style.visibility = "hidden";}
-
 function showDragonGame(){
 	document.getElementById('dragon-wrapper').style.visibility = "visible";
 
@@ -188,22 +129,3 @@ function showDragonGame(){
 function stopDragonGame(){
 	document.getElementById('dragon-wrapper').style.visibility = "hidden";
 }
-
-
-
-
-
-
-// if((['myDie1'] === "dice-img/d2.gif") && (['myDie2'] === "dice-img/d2.gif")){
-// 	health.value = "70"}
-
-
-//Whenever you lose health
-
-// 
-	
-
-
-
-
-
