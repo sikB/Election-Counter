@@ -1,5 +1,3 @@
-
-
 function throwDie(){
 	var randomDie = Math.round(Math.random()*5)+1;
 	var imageName = "dice-img/d" + randomDie + ".gif";
@@ -25,11 +23,6 @@ function throwDie(){
 	
 }
 }
-
-
-
-// <input type="button" onclick="throwDie();">
-
 function runForYourLife(){
 	document.getElementById('whimp1').style.visibility = "visible";
 	document.getElementById('coward').style.visibility = "visible";
@@ -38,18 +31,3 @@ function runForYourLife(){
 	document.getElementById('wild-dragon').style.visibility = "hidden";
 	document.getElementById('your-health').style.visibility = "hidden";
 	document.getElementById('health-bar').style.visibility = "hidden";}
-
-
-
-
-
-
-// if((['myDie1'] === "dice-img/d2.gif") && (['myDie2'] === "dice-img/d2.gif")){
-// 	health.value = "70"}
-
-
-//Whenever you lose health
-
-// 
-	
-
